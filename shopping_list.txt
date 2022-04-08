@@ -1,5 +1,5 @@
-Eggs
-Milk
-Chocolate
-Juice
-Coca Cola
+Eggs x4
+Milk x2
+Chocolate x3
+Juice x5
+Coca Cola x2
