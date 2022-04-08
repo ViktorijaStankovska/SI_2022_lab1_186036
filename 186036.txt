@@ -185,5 +185,9 @@ Po promenata napraviv git commit so poraka Merge branch 'branch2' i ja spoiv bra
 git add 186036.txt
 git commit -m "Add docs"
 
+23.git push origin master
+git push origin branch1
+git push origin branch2
+
 
 
