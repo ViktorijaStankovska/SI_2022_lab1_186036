@@ -1,0 +1,189 @@
+4.
+git clone https://github.com/ViktorijaStankovska/SI_2022_lab1_186036.git
+git init
+
+5. 
+echo > shopping_list.txt
+start shopping_list.txt
+git add shopping_list.txt
+git commit -m "Add 5 items to the shopping list"
+
+6.
+start shopping_list.txt
+git commit -a -m "Add quantities to the items."
+
+7.
+git branch branch1
+git branch branch2
+
+8.
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>git log
+commit 2bdc1bcbb6204373a9a50db5d473909d7501a697 (HEAD -> master, branch2, branch1)
+Author: ViktorijaStankovska <viki_stankovska1@hotmail.com>
+Date:   Fri Apr 8 19:10:51 2022 +0200
+
+    Add quantities to the items.
+
+commit ab4fbdf79f8d636f5b3cd034e76177ce2d48fd9b
+Author: ViktorijaStankovska <viki_stankovska1@hotmail.com>
+Date:   Fri Apr 8 19:08:18 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 838ce7a690ddc7a1a8d59dde8f623b22864f79ae (origin/master, origin/HEAD)
+Author: ViktorijaStankovska <102733918+ViktorijaStankovska@users.noreply.github.com>
+Date:   Fri Apr 8 18:48:27 2022 +0200
+
+    Update README.md
+
+commit b331d7aead60358d5c9acfd049fca531c7c18062
+Author: ViktorijaStankovska <102733918+ViktorijaStankovska@users.noreply.github.com>
+Date:   Fri Apr 8 18:47:56 2022 +0200
+
+    Initial commit
+
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>
+
+9.
+git push origin master
+git push origin branch1
+git push origin branch2
+
+10. 
+git checkout branch1
+
+11.
+start shopping_list.txt
+git commit -a -m "Change quantity of item #5"
+
+
+12. 
+git checkout master
+
+13. 
+start shopping_list.txt
+git commit -a -m  "Change quantity of item #2"
+
+14.
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 361 bytes | 180.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ViktorijaStankovska/SI_2022_lab1_186036.git
+   2bdc1bc..9f6903c  master -> master
+
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>git push origin branch1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 362 bytes | 362.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ViktorijaStankovska/SI_2022_lab1_186036.git
+   2bdc1bc..de6f2de  branch1 -> branch1
+
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>git push origin branch2
+Everything up-to-date
+
+15.
+git checkout branch2
+
+16. 
+start shopping_list.txt
+git commit -a -m "Modify item #4"
+
+17.
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>git log
+commit af17a70d49b6a67975227f6f024fdc00e7c727ff (HEAD -> branch2)
+Author: ViktorijaStankovska <viki_stankovska1@hotmail.com>
+Date:   Fri Apr 8 19:26:42 2022 +0200
+
+    Modify item #4
+
+commit 2bdc1bcbb6204373a9a50db5d473909d7501a697 (origin/branch2)
+Author: ViktorijaStankovska <viki_stankovska1@hotmail.com>
+Date:   Fri Apr 8 19:10:51 2022 +0200
+
+    Add quantities to the items.
+
+commit ab4fbdf79f8d636f5b3cd034e76177ce2d48fd9b
+Author: ViktorijaStankovska <viki_stankovska1@hotmail.com>
+Date:   Fri Apr 8 19:08:18 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 838ce7a690ddc7a1a8d59dde8f623b22864f79ae
+Author: ViktorijaStankovska <102733918+ViktorijaStankovska@users.noreply.github.com>
+Date:   Fri Apr 8 18:48:27 2022 +0200
+
+    Update README.md
+
+commit b331d7aead60358d5c9acfd049fca531c7c18062
+Author: ViktorijaStankovska <102733918+ViktorijaStankovska@users.noreply.github.com>
+Date:   Fri Apr 8 18:47:56 2022 +0200
+
+    Initial commit
+
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>
+
+18.
+start shopping_list.txt
+git commit --amend -m "Modify item #4 and add item #6"
+
+19.
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>git log
+commit b8d61f67614f01c0af980269de34b0768e73b69b (HEAD -> branch2)
+Author: ViktorijaStankovska <viki_stankovska1@hotmail.com>
+Date:   Fri Apr 8 19:26:42 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 2bdc1bcbb6204373a9a50db5d473909d7501a697 (origin/branch2)
+Author: ViktorijaStankovska <viki_stankovska1@hotmail.com>
+Date:   Fri Apr 8 19:10:51 2022 +0200
+
+    Add quantities to the items.
+
+commit ab4fbdf79f8d636f5b3cd034e76177ce2d48fd9b
+Author: ViktorijaStankovska <viki_stankovska1@hotmail.com>
+Date:   Fri Apr 8 19:08:18 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 838ce7a690ddc7a1a8d59dde8f623b22864f79ae
+Author: ViktorijaStankovska <102733918+ViktorijaStankovska@users.noreply.github.com>
+Date:   Fri Apr 8 18:48:27 2022 +0200
+
+    Update README.md
+
+commit b331d7aead60358d5c9acfd049fca531c7c18062
+Author: ViktorijaStankovska <102733918+ViktorijaStankovska@users.noreply.github.com>
+Date:   Fri Apr 8 18:47:56 2022 +0200
+
+    Initial commit
+
+C:\Users\Acer\Desktop\lab1\SI_2022_lab1_186036>
+
+20.
+git stash save shopping_list.txt
+git checkout master
+git merge branch1
+
+21.
+git merge branch2
+git commit -a -m "Merge branch 'branch2'"
+git merge branch2    // mi dade Already up to date.
+
+Se sluci koflikt pri spojuvanje na branch2 so master.
+Go razreshiv so otvoranje na dokumentot i odlucuvanje na koja promena ke ostane. 
+Po promenata napraviv git commit so poraka Merge branch 'branch2' i ja spoiv branch2 kon master.
+
+22.
+git add 186036.txt
+git commit -m "Add docs"
+
+
+
