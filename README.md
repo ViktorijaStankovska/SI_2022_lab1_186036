@@ -1,1 +1,1 @@
-# SI_2022_lab1_186036
+Viktorija Stankovska 186036
